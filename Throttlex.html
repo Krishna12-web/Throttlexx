@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThrottleX - Bike Showcase</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #f0a500;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    .bike-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .bike-card {
+      background: white;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .bike-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .bike-card h2 a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .bike-card h2 a:hover {
+      color: #f0a500;
+    }
+
+    .cinematic-section {
+      color: white;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 10px black;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    .details {
+      padding: 40px;
+      background-color: #111;
+    }
+
+    .details h2 {
+      color: #f0a500;
+    }
+
+    .details p {
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 40px auto 0;
+      padding: 10px 20px;
+      background-color: #f0a500;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      text-align: center;
+      width: fit-content;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+  </style>
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+  }
+  .contact-label {
+    color: #f0a500; 
+  }
+  .contact-name {
+    color: #00bcd4; 
+    font-weight: bold;
+  }
+  .contact-email {
+    color: #00bcd4;
+  }
+  .contact-phone {
+    color: #00bcd4;
+  }
+  .contact-location {
+    color: #00bcd4;
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <h1>ThrottleX - Bike Showcase</h1>
+    <nav>
+      <a href="#showcase">Showcase</a>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section id="showcase" class="bike-container">
+    <div class="bike-card">
+      <img src="https://www.timesbull.com/wp-content/uploads/2024/09/Yamaha-R15-V4-3-jpg.webp" alt="Yamaha R15 V4">
+      <h2><a href="#r15">Yamaha R15 V4</a></h2>
+      <p>155cc | 6-speed | ₹1.8L</p>
+    </div>
+    <div class="bike-card">
+      <img src="https://c.ndtvimg.com/2024-10/dvo9q8n8_ktm_625x300_03_October_24.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738" alt="KTM Duke 200">
+      <h2><a href="#duke">KTM Duke 200</a></h2>
+      <p>199cc | 6-speed | ₹2.1L</p>
+    </div>
+    <div class="bike-card">
+      <img src="https://www.financialexpress.com/wp-content/uploads/2024/08/Royal-Enfield-Classic-350-3.jpg" alt="Royal Enfield Classic 350">
+      <h2><a href="#classic">Royal Enfield Classic 350</a></h2>
+      <p>349cc | 5-speed | ₹2.2L</p>
+    </div>
+  </section>
+
+  
+  <section id="home">
+    <div class="details" style="background:#fff; color:#000; text-align:center;">
+      <h2>All Bike Names</h2>
+      <ul style="list-style-type: none; font-size: 18px; line-height: 2;">
+        <li>Yamaha R15 V4</li>
+        <li>KTM Duke 200</li>
+        <li>Royal Enfield Classic 350</li>
+      </ul>
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <div class="details" style="text-align:center;">
+      <h2>Contact Me</h2>
+      <p><strong style="color: #f0a500;">Name:</strong><span class="contact-name">Krishna Saini</span> </p>
+      <p><strong style="color: #f0a500;">Email:</strong><span class="contact-email">krishnaasaini644@gamil.com</span></p>
+      <p><strong style="color: #f0a500;">Phone:</strong><span class="contact-phone">+91 7088912737</span></p>
+      <p><strong style="color: #f0a500;">Location:</strong><span class="contact-location">Meerut, Uttar Pradesh, India</span></p>
+    </div>
+  </section>
+
+  
+  <section id="r15" class="cinematic-section">
+    <div class="hero" style="background-image: url('https://www.timesbull.com/wp-content/uploads/2024/09/Yamaha-R15-V4-3-jpg.webp');">
+      <h1>Yamaha R15 V4</h1>
+    </div>
+    <div class="details">
+      <h2>Overview</h2>
+      <p>The Yamaha R15 V4 is a sportbike with aggressive styling and track-inspired tech. It's designed for thrill-seekers.</p>
+      <h2>Specifications</h2>
+      <p>155cc | 6-Speed | 18.4 PS @ 10,000 rpm | Top Speed: 140 km/h | ₹1.8L</p>
+      <h2>Features</h2>
+      <p>LED Headlamps, Quick Shifter, Slipper Clutch, Y-Connect Bluetooth</p>
+      <a class="back-btn" href="#showcase">← Back to Showcase</a>
+    </div>
+  </section>
+
+  
+  <section id="duke" class="cinematic-section">
+    <div class="hero" style="background-image: url('https://c.ndtvimg.com/2024-10/dvo9q8n8_ktm_625x300_03_October_24.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738');">
+      <h1>KTM Duke 200</h1>
+    </div>
+    <div class="details">
+      <h2>Overview</h2>
+      <p>The KTM Duke 200 is built for performance, precision, and city domination with its lightweight and sharp design.</p>
+      <h2>Specifications</h2>
+      <p>199.5cc | 6-Speed | 25 PS | Top Speed: 142 km/h | ₹2.1L</p>
+      <h2>Features</h2>
+      <p>Supermoto ABS, LCD Display, WP Suspension, Trellis Frame</p>
+      <a class="back-btn" href="#showcase">← Back to Showcase</a>
+    </div>
+  </section>
+
+  
+  <section id="classic" class="cinematic-section">
+    <div class="hero" style="background-image: url('https://www.financialexpress.com/wp-content/uploads/2024/08/Royal-Enfield-Classic-350-3.jpg');">
+      <h1>Royal Enfield Classic 350</h1>
+    </div>
+    <div class="details">
+      <h2>Overview</h2>
+      <p>The Royal Enfield Classic 350 brings timeless design with a refined, smooth engine and solid long-ride comfort.</p>
+      <h2>Specifications</h2>
+      <p>349cc | 5-Speed | 20.2 PS | Top Speed: 120 km/h | ₹2.2L</p>
+      <h2>Features</h2>
+      <p>Dual Channel ABS, Retro Design, Comfortable Ride, Tripper Navigation</p>
+      <a class="back-btn" href="#showcase">← Back to Showcase</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ThrottleX . All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
